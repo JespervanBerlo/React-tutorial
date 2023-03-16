@@ -5,14 +5,14 @@ function Navbar() {
     return (
         <nav>
             <ul>
-                <li>
-                    <Link to="/">
+                <li class="linkitem">
+                    <Link class="linkcontent" to="/">
                         Home
                     </Link>
                 </li>
-                <li>
-                    <Link to="/tictactoe">
-                        TTT
+                <li class="linkitem">
+                    <Link class="linkcontent" to="/tictactoe">
+                        TicTacToe
                     </Link>
                 </li>
             </ul>

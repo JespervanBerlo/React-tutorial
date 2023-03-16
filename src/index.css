@@ -1,9 +1,10 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    margin: 0;
   }
-  
-  ol, ul {
+
+  /*TicTacToe Game*/
+  ol {
     padding-left: 30px;
   }
   
@@ -43,9 +44,34 @@ body {
   .game {
     display: flex;
     flex-direction: row;
+    margin: 10px;
   }
   
   .game-info {
     margin-left: 20px;
   }
-  
+
+/* Navigation bar*/
+  nav {
+    background: #bbb; 
+    width: 150px;
+    float: left;
+    display: inline;
+    margin: 0 10px 0 0;
+    padding: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+ .linkitem {
+  list-style-type: none;
+  padding: 2px;
+ }
+ .linkcontent {
+  display: block;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+ }
+ /* Placeholder*/
