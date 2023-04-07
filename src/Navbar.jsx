@@ -1,22 +1,29 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <nav>
-            <ul>
-                <li class="linkitem">
-                    <Link class="linkcontent" to="/">
-                        Home
-                    </Link>
-                </li>
-                <li class="linkitem">
-                    <Link class="linkcontent" to="/tictactoe">
-                        TicTacToe
-                    </Link>
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <ul>
+                    <li class="linkitem">
+                        <Link class="linkcontent" to="/">
+                            Home
+                        </Link>
+                    </li>
+                    <li class="linkitem">
+                        <Link class="linkcontent" to="/tictactoe">
+                            TicTacToe
+                        </Link>
+                    </li>
+                    <li class="linkitem">
+                        <Link class="linkcontent" to="/paint">
+                            Paint
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 }
 
