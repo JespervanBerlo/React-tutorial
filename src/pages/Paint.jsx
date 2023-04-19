@@ -1,9 +1,15 @@
 import React from 'react';
+import Canvas from '../Components/Canvas';
 
 function Paint() {
     return (
-        <h1>Painting</h1>
-    );
+        <div>
+            <Canvas
+            width={500}
+            height={500}
+            />
+        </div>
+    )
 }
 
 export default Paint;
