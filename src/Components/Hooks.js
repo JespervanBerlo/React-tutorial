@@ -3,14 +3,12 @@ import { useEffect, useRef } from 'react';
 export function useOnDraw(onDraw) {
 
     const canvasRef = useRef(null);
-
     const isDrawingRef = useRef(false);
-
     const mouseMoveListenerRef = useRef(null);
     const mouseDownListenerRef = useRef(null);
     const mouseUpListenerRef = useRef(null);
-
     const prevPointRef = useRef(null);
+    // const colorRef = useRef(null);
 
     useEffect(() => {
         return () => {
@@ -40,7 +38,9 @@ export function useOnDraw(onDraw) {
             if(isDrawingRef.current) {
                 const point = computePointInCanvas(e.clientX, e.clientY);
                 const ctx = canvasRef.current.getContext('2d');
-                if(onDraw) onDraw(ctx, point, prevPointRef.current);
+                // const cursorColor = colorRef = document.getElementById('asd').value
+                const cursorColor = document.getElementById('asd').value;
+                if(onDraw) onDraw(ctx, point, prevPointRef.current, cursorColor);
                 prevPointRef.current = point;
                 console.log(point);
             }  

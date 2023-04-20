@@ -1,4 +1,4 @@
-import { useOnDraw } from './Hooks'
+import { useOnDraw} from './Hooks'
 
 const Canvas = ({
     width,
@@ -7,8 +7,8 @@ const Canvas = ({
 
     const setCanvasRef = useOnDraw(onDraw);
 
-    function onDraw(ctx, point, prevPoint) {
-        drawLine(prevPoint, point, ctx, '#0000FF', 3);
+    function onDraw(ctx, point, prevPoint, cursorColor) {
+        drawLine(prevPoint, point, ctx, cursorColor, 3);
     }
 
     function drawLine(
@@ -33,12 +33,23 @@ const Canvas = ({
     }
 
     return(
-        <canvas 
-            width = {width} 
-            height = {height}
-            style = {canvasStyle}
-            ref = {setCanvasRef}
-        />
+        <div> 
+            <select id= 'asd'>
+                <option value = 'red'>
+                    red
+                </option>
+                <option value = 'blue'>
+                    blue
+                </option>
+            </select>
+            <canvas 
+                width = {width} 
+                height = {height}
+                style = {canvasStyle}
+                ref = {setCanvasRef}
+            />
+        </div>
+       
     );
 }
 
