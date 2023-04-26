@@ -1,5 +1,6 @@
 import { useOnDraw} from './Hooks'
 
+
 const Canvas = ({
     width,
     height
@@ -32,16 +33,27 @@ const Canvas = ({
         ctx.fill();
     }
 
+    function selectMenu() {
+        const colours = ['blue', 'red', 'green', 'yellow'];
+        let optionElements = []
+        for (let i=0; i < colours.length; i++){    
+            optionElements.push(
+            <option value = {colours[i]}>
+                {colours[i]}
+                {console.log(colours.length, i, colours[i])}
+            </option>
+            )      
+        }  
+        return(
+            <select id = 'colourPicker'>
+                {optionElements}
+            </select>
+        )
+    }
+
     return(
         <div> 
-            <select id= 'asd'>
-                <option value = 'red'>
-                    red
-                </option>
-                <option value = 'blue'>
-                    blue
-                </option>
-            </select>
+            {selectMenu()} 
             <canvas 
                 width = {width} 
                 height = {height}

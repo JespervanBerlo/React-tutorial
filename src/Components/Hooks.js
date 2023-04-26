@@ -39,7 +39,7 @@ export function useOnDraw(onDraw) {
                 const point = computePointInCanvas(e.clientX, e.clientY);
                 const ctx = canvasRef.current.getContext('2d');
                 // const cursorColor = colorRef = document.getElementById('asd').value
-                const cursorColor = document.getElementById('asd').value;
+                const cursorColor = document.getElementById('colourPicker').value;
                 if(onDraw) onDraw(ctx, point, prevPointRef.current, cursorColor);
                 prevPointRef.current = point;
                 console.log(point);
