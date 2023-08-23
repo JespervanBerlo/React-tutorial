@@ -34,9 +34,10 @@ const Canvas = ({
     }
 
     function selectMenu() {
-        const colours = ['blue', 'red', 'green', 'yellow'];
+        const colours = ['Blue', 'Red', 'Green', 'Yellow'];
         let optionElements = []
-        for (let i=0; i < colours.length; i++){    
+
+        for (let i = 0; i < colours.length; i++){    
             optionElements.push(
             <option value = {colours[i]}>
                 {colours[i]}
@@ -47,19 +48,22 @@ const Canvas = ({
         return(
             <select id = 'colourPicker'>
                 {optionElements}
+                <option value = 'white'>
+                    Eraser
+                </option>
             </select>
         )
     }
 
     return(
-        <div> 
-            {selectMenu()} 
+        <div>     
             <canvas 
                 width = {width} 
                 height = {height}
                 style = {canvasStyle}
                 ref = {setCanvasRef}
             />
+            {selectMenu()} 
         </div>
        
     );

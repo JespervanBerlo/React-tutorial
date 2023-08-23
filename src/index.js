@@ -6,6 +6,8 @@ import Layout from './pages/Layout';
 import Home from './pages/Home';
 import TicTacToe from './pages/TicTacToe'
 import Paint from './pages/Paint'
+import Clicker from './pages/Clicker'
+import Clock from './pages/Clock'
 
 export default function App(){
   return (
@@ -15,6 +17,8 @@ export default function App(){
           <Route index element={<Home />} />
           <Route path="TicTacToe" element={<TicTacToe />} />
           <Route path="Paint" element={<Paint />} />
+          <Route path="Clicker" element={<Clicker />} />
+          <Route path="Clock" element={<Clock />} />
         </Route>
       </Routes>
     </BrowserRouter>
