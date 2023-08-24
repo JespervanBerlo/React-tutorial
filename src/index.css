@@ -123,7 +123,6 @@ body {
   top: 50%;
   left: calc(50% - 2.5px);
   transform-origin: top;
-  transform: rotate(180deg);
   z-index: 50;
  }
  .minuutwijzer{
@@ -134,7 +133,6 @@ body {
   top: 50%;
   left: calc(50% - 1.5px);
   transform-origin: top;
-  transform: rotate(180deg);
   z-index: 51;
  }
  .secondewijzer{
@@ -150,10 +148,104 @@ body {
  .middelpunt{
   background: lightblue;
   position: absolute;
-  top: calc(50% - 10px);
-  left: calc(50% - 10px);
-  width: 20px;
-  height: 20px;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   z-index: 100;
+ }
+div.hourmarks div:nth-child(1){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 7.5px);
+  height: 150px;
+ }
+ div.hourmarks div:nth-child(2){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 4px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(30deg);
+ }
+ div.hourmarks div:nth-child(3){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 4px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(60deg);
+ }
+ div.hourmarks div:nth-child(4){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 4px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(90deg);
+ }
+ div.hourmarks div:nth-child(5){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 4px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(120deg);
+ }
+ div.hourmarks div:nth-child(6){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 4px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(150deg);
+ }
+ div.hourmarks div:nth-child(7){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 4px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(180deg);
+ }
+ div.hourmarks div:nth-child(8){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 4px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(210deg);
+ }
+ div.hourmarks div:nth-child(9){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 4px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(240deg);
+ }
+ div.hourmarks div:nth-child(10){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 4px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(270deg);
+ }
+ div.hourmarks div:nth-child(11){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 7.5px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(300deg);
+ }
+ div.hourmarks div:nth-child(12){
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 7.5px);
+  height: 150px;
+  transform-origin: bottom;
+  transform: rotateZ(330deg);
  }
