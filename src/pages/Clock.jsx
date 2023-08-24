@@ -1,9 +1,10 @@
 import React from 'react';
 import Klok from '../Components/Klok';
-import Clockcss from '../clock.css'
+import '../clock.css'
+
 function Clock() {
     return (
-        <div>
+        <div className="Clock">
             <Klok />
         </div>
     );

@@ -3,7 +3,7 @@ import Canvas from '../Components/Canvas';
 
 function Paint() {
     return (
-        <div>
+        <div className="canvas">
             <Canvas
             width={500}
             height={500}

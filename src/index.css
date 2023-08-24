@@ -56,19 +56,22 @@ body {
   }
 
 /* Navigation bar*/
-  header {
+  /* header {
     width: 15vw;
     margin: 0%;
     padding: 0%;
-  }
-  nav {
+  } */
+  header {
     background: #bbb; 
-    width: 100%;
+    width: 15vw;
+    min-width: 100px;
     height: 100%;
     float: left;
     display: inline;
     margin: 0 0 0 0;
     padding: 0;
+    position: absolute;
+
   }
   ul {
     margin: 0;
@@ -95,4 +98,62 @@ body {
  .root {
   height: 100%;
   display: flex;
+ }
+ /* Canvas */
+ .canvas{
+  float: right;
+  width: 85%;
+ }
+ /* Clock */
+ .klok{
+  display: flex;
+  background: red;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1%;
+  left: 25%;
+ }
+ .uurwijzer{
+  background: black;
+  position: absolute;
+  height: 60px;
+  width: 5px;
+  top: 50%;
+  left: calc(50% - 2.5px);
+  transform-origin: top;
+  transform: rotate(180deg);
+  z-index: 50;
+ }
+ .minuutwijzer{
+  background: green;
+  position: absolute;
+  height: 90px;
+  width: 3px;
+  top: 50%;
+  left: calc(50% - 1.5px);
+  transform-origin: top;
+  transform: rotate(180deg);
+  z-index: 51;
+ }
+ .secondewijzer{
+  background: yellow;
+  position: absolute;
+  height: 150px;
+  width: 1px;
+  top: 50%;
+  left: 50%;
+  transform-origin: top;
+  z-index: 52;
+ }
+ .middelpunt{
+  background: lightblue;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 100;
  }
