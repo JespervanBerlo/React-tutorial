@@ -31,6 +31,11 @@ function Navbar() {
                             Clock
                         </Link>
                     </li>
+                    <li class="linkitem">
+                        <Link class="linkcontent" to="/Chart">
+                            Chart
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>

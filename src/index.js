@@ -8,6 +8,7 @@ import TicTacToe from './pages/TicTacToe'
 import Paint from './pages/Paint'
 import Clicker from './pages/Clicker'
 import Clock from './pages/Clock'
+import Chart from './pages/Chart'
 
 export default function App(){
   return (
@@ -19,6 +20,7 @@ export default function App(){
           <Route path="Paint" element={<Paint />} />
           <Route path="Clicker" element={<Clicker />} />
           <Route path="Clock" element={<Clock />} />
+          <Route path="Chart" element={<Chart/>} />
         </Route>
       </Routes>
     </BrowserRouter>

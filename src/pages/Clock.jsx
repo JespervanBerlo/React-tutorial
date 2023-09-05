@@ -4,9 +4,12 @@ import '../clock.css'
 
 function Clock() {
     return (
-        <div className="Clock">
-            <Klok />
+        <div className='content'>
+            <div className="Clock">
+                <Klok />
+            </div>
         </div>
+        
     );
 }
 

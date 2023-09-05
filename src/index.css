@@ -2,7 +2,10 @@
   margin: 0%;
   padding: 0%;
 }
-
+.content{
+  float: right;
+  width: 85%;
+}
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
   }

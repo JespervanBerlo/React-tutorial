@@ -3,7 +3,7 @@ import Counter from '../Components/Counter';
 
 function Clicker() {
     return (
-        <div>
+        <div className='content'>
             <Counter />
         </div>
     );

@@ -56,7 +56,7 @@ const Canvas = ({
     }
 
     return(
-        <div>     
+        <div className='content'>     
             <canvas 
                 width = {width} 
                 height = {height}
