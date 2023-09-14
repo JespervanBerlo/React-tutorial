@@ -6,33 +6,33 @@ function Navbar() {
         <header>
             <nav>
                 <ul>
-                    <li class="linkitem">
-                        <Link class="linkcontent" to="/">
+                    <li className="linkitem">
+                        <Link className="linkcontent" to="/">
                             Home
                         </Link>
                     </li>
-                    <li class="linkitem">
-                        <Link class="linkcontent" to="/tictactoe">
+                    <li className="linkitem">
+                        <Link className="linkcontent" to="/tictactoe">
                             TicTacToe
                         </Link>
                     </li>
-                    <li class="linkitem">
-                        <Link class="linkcontent" to="/paint">
+                    <li className="linkitem">
+                        <Link className="linkcontent" to="/paint">
                             Paint
                         </Link>
                     </li>
-                    <li class="linkitem">
-                        <Link class="linkcontent" to="/clicker">
+                    <li className="linkitem">
+                        <Link className="linkcontent" to="/clicker">
                             Clicker
                         </Link>
                     </li>
-                    <li class="linkitem">
-                        <Link class="linkcontent" to="/Clock">
+                    <li className="linkitem">
+                        <Link className="linkcontent" to="/Clock">
                             Clock
                         </Link>
                     </li>
-                    <li class="linkitem">
-                        <Link class="linkcontent" to="/Chart">
+                    <li className="linkitem">
+                        <Link className="linkcontent" to="/Chart">
                             Chart
                         </Link>
                     </li>
