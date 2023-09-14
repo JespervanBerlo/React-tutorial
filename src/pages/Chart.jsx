@@ -9,7 +9,7 @@ class Charttest extends Component {
       super(props);
 
       this.state = {
-        options: {
+        options: {  
           chart: {
             id: "basic-bar"
           },
@@ -20,7 +20,7 @@ class Charttest extends Component {
         series: [
           {
             name: "series-1",
-            data: [30, 40, 45, 50, 49, 60, 70, 91]
+            data: []
           }
         ]
       };
@@ -30,7 +30,24 @@ class Charttest extends Component {
       for (let i = 1906; i <= 2023; i++) {
         this.state.options.xaxis.categories.push(i)
       }
-      console.log(data);
+      console.log(data[0].endsWith('0101'));
+      let asfs = []
+      // get array with indexes of certain date
+      for (let i = 0; i < data.length; i++) {
+        // TODO limit input date to valid dates
+        if (data[i].endsWith('0314') === true)
+        {
+          asfs.push(i)
+        }
+      }
+      // get temperature of said date
+      for (let i = 0; i < asfs.length; i++) {
+        console.log(asfs)      
+        this.state.series[0].data.push(temp[asfs[i]]/10)
+      }
+      // console.log(this.state.series[0].data.push(asfs[2]))
+      console.log(asfs)
+
 
       console.log(this.state.options.xaxis.categories)
       return (
