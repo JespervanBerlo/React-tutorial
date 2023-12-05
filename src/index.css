@@ -2,10 +2,14 @@
   margin: 0%;
   padding: 0%;
 }
-.content{
+main{
+  display: flex;
+  width: 85vw;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
   float: right;
-  width: 85%;
-}
+ }
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
   }
@@ -64,7 +68,7 @@ body {
     margin: 0%;
     padding: 0%;
   } */
-  header {
+  .navbar {
     background: #bbb; 
     width: 15vw;
     min-width: 100px;
@@ -76,10 +80,10 @@ body {
     position: absolute;
 
   }
-  ul {
+  /* ul {
     margin: 0;
     padding: 0;
-  }
+  } */
  .linkitem {
   list-style-type: none;
   padding: 2px;
@@ -91,21 +95,30 @@ body {
   text-align: center;
  }
  /* Placeholder*/
- main{
-  display: flex;
-  width: 70%;
-  padding: 0%;
-  margin: 0%;
-  text-align: center;
- }
+ 
  .root {
   height: 100%;
   display: flex;
  }
  /* Canvas */
  .canvas{
-  float: right;
-  width: 85%;
+  /* width: 60vw;
+  height: 70vh; */
+ }
+ .colourpicker{
+  background-color: chocolate;
+  border-color: chocolate;
+  border-style: solid;
+  border-radius: 3px;
+  margin: 20px 20px 0px 20px;
+ }
+ .widthpicker{
+  background-color: chocolate;
+  width:50px;
+  margin: 20px 20px 0px 20px;
+ }
+ .Blue{
+  background-color: #0000ff;
  }
  /* Clock */
  .klok{

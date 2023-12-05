@@ -103,7 +103,7 @@ render() {
   }   
 
   return (
-    <main>
+    <main className="content">
       <div className="game">
         <div className="game-board">
           <Board

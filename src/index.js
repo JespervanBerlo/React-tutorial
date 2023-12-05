@@ -9,6 +9,7 @@ import Paint from './pages/Paint'
 import Clicker from './pages/Clicker'
 import Clock from './pages/Clock'
 import Chart from './pages/Chart'
+import RockPaperScissor from './pages/RockPaperScissor';
 
 export default function App(){
   return (
@@ -21,6 +22,7 @@ export default function App(){
           <Route path="Clicker" element={<Clicker />} />
           <Route path="Clock" element={<Clock />} />
           <Route path="Chart" element={<Chart/>} />
+          <Route path="RPS" element={<RockPaperScissor/>} />
         </Route>
       </Routes>
     </BrowserRouter>

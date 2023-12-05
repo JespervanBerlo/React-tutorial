@@ -3,9 +3,12 @@ import Counter from '../Components/Counter';
 
 function Clicker() {
     return (
-        <div className='content'>
-            <Counter />
-        </div>
+        <main>
+           <div>
+                <Counter />
+            </div> 
+        </main>
+        
     );
 }
 

@@ -23,19 +23,19 @@ function Klok(){
 
             <div 
             className="uurwijzer"
-            style={{transform: `rotateZ(${date.getHours() * 30 - 180}deg)`}}
+            style={{transform: `rotateZ(${(date.getHours() + (date.getMinutes()/60)) * 30 + 180}deg)`}}
             >
             </div>
 
             <div 
             className="minuutwijzer"
-            style={{transform: `rotateZ(${date.getMinutes() * 6 - 180}deg)`}}
+            style={{transform: `rotateZ(${date.getMinutes() * 6 + 180}deg)`}}
             >              
             </div>
 
             <div 
             className="secondewijzer"
-            style={{transform: `rotateZ(${date.getSeconds() * 6 - 180}deg)`}}
+            style={{transform: `rotateZ(${date.getSeconds() * 6 + 180}deg)`}}
             >
             </div>
             <div className="hourmarks">

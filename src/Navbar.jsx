@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 function Navbar() {
     return (
-        <header>
+        <header className="navbar">
             <nav>
                 <ul>
                     <li className="linkitem">
@@ -34,6 +34,11 @@ function Navbar() {
                     <li className="linkitem">
                         <Link className="linkcontent" to="/Chart">
                             Chart
+                        </Link>
+                    </li>
+                    <li className="linkitem">
+                        <Link className="linkcontent" to="/RPS">
+                            RockPaperScissor
                         </Link>
                     </li>
                 </ul>

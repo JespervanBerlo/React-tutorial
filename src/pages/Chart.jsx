@@ -35,7 +35,7 @@ class Charttest extends Component {
       // get array with indexes of certain date
       for (let i = 0; i < data.length; i++) {
         // TODO limit input date to valid dates
-        if (data[i].endsWith('0314') === true)
+        if (data[i].endsWith('0718') === true)
         {
           asfs.push(i)
         }
@@ -51,30 +51,22 @@ class Charttest extends Component {
 
       console.log(this.state.options.xaxis.categories)
       return (
+      <main>
         <div className="content">
           <div>
-            <div>
+             <div>
               <Chart
                 options={this.state.options}
                 series={this.state.series}
                 type="bar"
                 width="1500"
-              />
+               />
             </div>
           </div>
         </div>
+      </main>
+        
       );
     }
   }
-
-
-
-// function Chart() {
-//     return (
-//         <div className='content'>
-//             <h1>Hello World!</h1>
-//         </div>
-//     );
-// }
-
 export default Charttest;

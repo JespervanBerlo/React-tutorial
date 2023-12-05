@@ -8,7 +8,6 @@ export function useOnDraw(onDraw) {
     const mouseDownListenerRef = useRef(null);
     const mouseUpListenerRef = useRef(null);
     const prevPointRef = useRef(null);
-    // const colorRef = useRef(null);
 
     useEffect(() => {
         return () => {
@@ -38,11 +37,10 @@ export function useOnDraw(onDraw) {
             if(isDrawingRef.current) {
                 const point = computePointInCanvas(e.clientX, e.clientY);
                 const ctx = canvasRef.current.getContext('2d');
-                // const cursorColor = colorRef = document.getElementById('asd').value
                 const cursorColor = document.getElementById('colourPicker').value;
-                if(onDraw) onDraw(ctx, point, prevPointRef.current, cursorColor);
+                const cursorWidth = document.getElementById('widthPicker').value;
+                if(onDraw) onDraw(ctx, point, prevPointRef.current, cursorColor, cursorWidth);
                 prevPointRef.current = point;
-                console.log(point);
             }  
         }
         mouseMoveListenerRef.current = mouseMoveListener;
@@ -83,4 +81,4 @@ export function useOnDraw(onDraw) {
 
     return setCanvasRef;
 
-}
+} 
